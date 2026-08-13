@@ -96,6 +96,42 @@ A convenience wrapper runs everything:
 python scripts/run_all_checks.py
 ```
 
+## Branching model & protected branches
+
+This repository uses a protected, PR-only workflow. **No one pushes directly to
+`main` or `dev`** — all changes flow through a branch and a pull request.
+
+```mermaid
+flowchart LR
+    F["feature/*, fix/*, docs/*"] -->|Pull Request| D[dev]
+    D -->|Pull Request| M[main]
+```
+
+- **`main`** — protected release branch. Stable, always releasable. Direct
+  commits are blocked (enforced for everyone, including administrators). Changes
+  arrive only via pull request, and only the repository owner (**brathod1432**)
+  merges to `main`.
+- **`dev`** — default integration branch. Everyday work merges here first via
+  pull request; direct commits are blocked.
+- **Feature branches** — branch off `dev` using a descriptive prefix
+  (`feature/…`, `fix/…`, `docs/…`, `chore/…`), then open a PR into `dev`.
+
+Protection rules in effect on `main` and `dev`:
+
+- Pull request required before merging (no direct pushes).
+- Force pushes and branch deletion are blocked.
+- `main` additionally requires linear history and resolved conversations, and
+  enforces the rules for administrators too.
+
+Typical flow:
+
+```bash
+git checkout dev && git pull
+git checkout -b feature/my-change
+# ...commit work...
+git push -u origin feature/my-change   # then open a PR into dev on GitHub
+```
+
 ## Commit & PR conventions
 
 - Use clear, imperative commit messages (Conventional Commits encouraged:

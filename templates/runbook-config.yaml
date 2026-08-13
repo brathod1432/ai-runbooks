@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------------------
+# Runbook generation config (consumed by tools/runbook_generator/generate_runbook.py)
+#
+# Fill this in, then run:
+#   python tools/runbook_generator/generate_runbook.py --config templates/runbook-config.yaml
+#
+# The generator produces a fully-structured runbook (all 25 sections, valid
+# front matter, two Mermaid diagrams, checklists, tables, and an example report
+# scaffold) that already passes tools/quality/runbook_validator.py structurally.
+# You then enrich the prose with domain expertise before submitting a PR.
+# ---------------------------------------------------------------------------
+
+id: example-service-latency-triage          # kebab-case; becomes the filename
+title: Example Service Latency Triage
+category: reliability                        # reliability | observability | databases | messaging | security | kubernetes | cloud-cost | migrations | architecture | cicd | ai-ml | data | soc
+risk_level: medium                           # low | medium | high | critical
+human_in_the_loop: recommended               # required | recommended | optional
+estimated_duration: 1h-4h                    # units: m h d w mo y  (e.g. 45m, 1h-4h, 2d-3w)
+difficulty: intermediate                     # beginner | intermediate | advanced | expert  (optional; derived from risk if omitted)
+
+owner: awesome-ai-runbooks-maintainers
+author: awesome-ai-runbooks-maintainers
+reviewers:
+  - awesome-ai-runbooks-maintainers
+
+supported_agents:
+  - devin
+  - claude-code
+  - github-copilot-agent
+  - openai-codex
+  - cursor
+  - openhands
+  - autogen
+  - crewai
+  - langgraph
+  - mcp-agent
+
+required_access:
+  - read-only-observability
+  - logs-read
+
+required_tools:
+  - prometheus
+  - grafana
+
+tags:
+  - reliability
+  - latency
+  - triage
+
+compliance_tags: []
+
+platform: cross-platform
+
+# One-line summary shown under the title.
+summary: >
+  Triage and localize the source of elevated latency for a service, producing an
+  evidence-backed hypothesis and a prioritized remediation plan.
+
+# Optional: short human notes that seed each section (the generator inserts these
+# as guidance so authors know exactly what to write). Leave blank to use defaults.
+objective: >
+  Localize the dominant contributor to elevated latency and recommend a fix.
+business_context: >
+  Latency directly affects conversion and SLO compliance for this service.

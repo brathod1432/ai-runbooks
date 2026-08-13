@@ -1,0 +1,76 @@
+{
+  "generated_by": "metrics/repository_metrics.py",
+  "generated_on": "2026-08-13",
+  "totals": {
+    "runbooks": 48,
+    "categories": 11,
+    "total_words": 77563,
+    "avg_words": 1616,
+    "total_mermaid_diagrams": 96,
+    "contributors": 1,
+    "commits": 1
+  },
+  "quality": {
+    "mean_completeness_score": 96.1
+  },
+  "distributions": {
+    "by_category": {
+      "reliability": 8,
+      "security": 8,
+      "migrations": 6,
+      "ai-ml": 5,
+      "databases": 5,
+      "kubernetes": 4,
+      "cloud-cost": 3,
+      "observability": 3,
+      "architecture": 2,
+      "cicd": 2,
+      "messaging": 2
+    },
+    "by_domain": {
+      "reliability": 8,
+      "security": 8,
+      "migrations": 6,
+      "ai-ml": 5,
+      "databases": 5,
+      "kubernetes": 4,
+      "cloud-cost": 3,
+      "observability": 3,
+      "architecture": 2,
+      "cicd": 2,
+      "messaging": 2
+    },
+    "by_difficulty": {
+      "advanced": 25,
+      "intermediate": 21,
+      "expert": 2
+    },
+    "by_risk_level": {
+      "high": 25,
+      "medium": 21,
+      "critical": 2
+    },
+    "by_status": {
+      "approved": 48
+    },
+    "by_human_in_the_loop": {
+      "required": 26,
+      "recommended": 22
+    },
+    "by_agent_support": {
+      "devin": 48,
+      "claude-code": 48,
+      "github-copilot-agent": 48,
+      "openai-codex": 48,
+      "cursor": 48,
+      "openhands": 48,
+      "autogen": 48,
+      "crewai": 48,
+      "langgraph": 48,
+      "mcp-agent": 48
+    },
+    "by_maturity_level": {
+      "Production": 48
+    }
+  }
+}

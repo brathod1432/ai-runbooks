@@ -1,0 +1,16 @@
+{
+  // Configuration for markdownlint-cli2. See .markdownlint.json for rule config.
+  "config": {
+    "extends": ".markdownlint.json"
+  },
+  "globs": ["**/*.md"],
+  "ignores": [
+    "node_modules/**",
+    ".git/**",
+    ".pytest_cache/**",
+    "site/**",
+    ".github/badges/BADGES.md",
+    "metrics/DASHBOARD.md",
+    "runbooks/**/README.md"
+  ]
+}

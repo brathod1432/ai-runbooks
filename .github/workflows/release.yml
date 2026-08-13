@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Validate & publish release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tooling dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Gate — validation must pass
+        run: |
+          python scripts/validate_structure.py
+          python tools/quality/runbook_validator.py
+          python -m pytest -q
+      - name: Generate release notes
+        run: python tools/release/release_manager.py --notes > RELEASE_NOTES.md
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md
+          generate_release_notes: false

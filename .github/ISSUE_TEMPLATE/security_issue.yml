@@ -1,0 +1,59 @@
+name: "🔒 Security issue"
+description: Report a security or safety concern. Please read the notice first.
+title: "[Security]: "
+labels: ["security", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **Do not disclose sensitive details in this public issue.**
+        >
+        > If you have found a vulnerability, an unsafe runbook that could induce
+        > an agent to take a dangerous action, a script vulnerability, or a
+        > supply-chain concern, report it **privately** via a
+        > [GitHub Security Advisory](../security/advisories/new) or the process in
+        > [`SECURITY.md`](../blob/main/SECURITY.md).
+        >
+        > Use this public form **only** for non-sensitive coordination (for
+        > example, to note that you have filed a private advisory). Never paste
+        > exploit details, secrets, hostnames, or reproduction steps here.
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I have read SECURITY.md and will report sensitive details privately, not in this issue.
+          required: true
+        - label: This issue contains no exploit details, secrets, or personal/customer data.
+          required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Non-sensitive summary
+      description: A short, high-level description with no exploitable detail.
+      placeholder: "A security-category runbook may encourage over-broad IAM grants."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Where does the concern live? (No specifics required.)
+      options:
+        - a runbook
+        - a template
+        - tooling / scripts
+        - CI / workflows
+        - dependencies / supply chain
+        - other
+    validations:
+      required: true
+  - type: input
+    id: advisory
+    attributes:
+      label: Private advisory reference (optional)
+      description: If you already filed a private advisory, note it here (no details).
+      placeholder: "GHSA filed on 2026-08-13"
+    validations:
+      required: false

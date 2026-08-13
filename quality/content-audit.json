@@ -1,0 +1,24 @@
+{
+  "generated_by": "tools/content_audit.py",
+  "runbooks_scanned": 48,
+  "runbooks_with_findings": 0,
+  "blocking_issues": 0,
+  "duplicate_candidates": [
+    {
+      "a": "aws-cost-optimization",
+      "b": "azure-cost-optimization",
+      "similarity": 0.772
+    },
+    {
+      "a": "aws-cost-optimization",
+      "b": "gcp-cost-optimization",
+      "similarity": 0.677
+    },
+    {
+      "a": "azure-cost-optimization",
+      "b": "gcp-cost-optimization",
+      "similarity": 0.694
+    }
+  ],
+  "findings": []
+}

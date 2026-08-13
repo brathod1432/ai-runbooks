@@ -1,0 +1,94 @@
+name: "📓 Runbook request"
+description: Request a new operational runbook for autonomous AI agents.
+title: "[Runbook]: "
+labels: ["runbook-request", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a **new runbook**. Strong requests describe a
+        concrete, recurring operational task an agent could own end-to-end.
+        Before submitting, review [`templates/runbook-template.md`](../blob/main/templates/runbook-template.md)
+        and the quality bar in [`docs/QUALITY_ASSURANCE.md`](../blob/main/docs/QUALITY_ASSURANCE.md).
+  - type: input
+    id: name
+    attributes:
+      label: Runbook name
+      description: A clear, outcome-focused title.
+      placeholder: "Diagnose and remediate Kafka consumer lag"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which library category does this belong to?
+      options:
+        - reliability
+        - observability
+        - databases
+        - messaging
+        - security
+        - kubernetes
+        - cloud-cost
+        - migrations
+        - architecture
+        - cicd
+        - ai-ml
+        - data
+        - soc
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What is the single, measurable outcome? What does "done" look like?
+      placeholder: "Restore consumer lag below the SLO threshold and produce a root-cause summary."
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Trigger conditions
+      description: Which alerts, schedules, tickets, or human requests should trigger this runbook?
+      placeholder: |
+        - Alert: consumer group lag > 100k messages for 10m
+        - Manual: on-call requests investigation
+    validations:
+      required: true
+  - type: checkboxes
+    id: agents
+    attributes:
+      label: Target agents
+      description: Which agent platforms should this runbook support?
+      options:
+        - label: devin
+        - label: claude-code
+        - label: github-copilot-agent
+        - label: openai-codex
+        - label: cursor
+        - label: openhands
+        - label: autogen
+        - label: crewai
+        - label: langgraph
+        - label: mcp-agent
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk level
+      description: Expected blast radius / reversibility (see QUALITY_ASSURANCE §3).
+      options:
+        - low
+        - medium
+        - high
+        - critical
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What is the business or reliability impact of automating this?
+    validations:
+      required: true

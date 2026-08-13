@@ -1,0 +1,36 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 5 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    name: Secret, dependency & security scoring
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tooling dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Secret scan
+        run: python tools/security/secret_scanner.py
+      - name: Dependency & supply-chain scan
+        run: python tools/security/dependency_scanner.py
+      - name: Security maturity score
+        run: python tools/security/security_score.py
+      - name: Upload security reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: security/*.json

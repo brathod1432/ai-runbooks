@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Report a security or safety issue (private)
+    url: https://github.com/awesome-ai-runbooks/awesome-ai-runbooks/security/advisories/new
+    about: Report vulnerabilities or unsafe-agent concerns privately via a GitHub Security Advisory. See SECURITY.md.
+  - name: 💬 Discussions
+    url: https://github.com/awesome-ai-runbooks/awesome-ai-runbooks/discussions
+    about: Ask questions, share runbooks, and propose ideas. See DISCUSSION_GUIDELINES.md.

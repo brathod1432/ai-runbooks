@@ -1,0 +1,15 @@
+# Normalize line endings: treat these as text and store with LF in the repo.
+*.md        text eol=lf
+*.py        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.json      text eol=lf
+*.jsonc     text eol=lf
+*.txt       text eol=lf
+LICENSE     text eol=lf
+.gitignore  text eol=lf
+
+# Binary assets
+*.png       binary
+*.jpg       binary
+*.svg       text eol=lf

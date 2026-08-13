@@ -1,0 +1,35 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: markdownlint-cli2
+        run: npx --yes markdownlint-cli2 "**/*.md"
+
+  python:
+    name: Python syntax & style
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile all tooling (syntax check)
+        run: python -m compileall -q tools scripts metrics tests
+      - name: Byte-compile guard for tabs/encoding
+        run: python -c "import pathlib,sys; [p.read_text(encoding='utf-8') for p in pathlib.Path('tools').rglob('*.py')]; print('ok')"

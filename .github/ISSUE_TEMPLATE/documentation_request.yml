@@ -1,0 +1,34 @@
+name: "📚 Documentation request"
+description: Request an improvement to the project's documentation.
+title: "[Docs]: "
+labels: ["documentation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us make the docs clearer and more complete. This form is for the
+        repository's guides and references (README, CONTRIBUTING, the `docs/`
+        set, templates). To fix a factual error inside a specific runbook, use
+        the **Bug report** form.
+  - type: input
+    id: page
+    attributes:
+      label: Page / section
+      description: Which document and heading needs attention?
+      placeholder: "docs/QUALITY_ASSURANCE.md — '4. Review Process'"
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What's the gap?
+      description: What is missing, confusing, outdated, or hard to follow?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+      description: How would you improve it? A rough draft or outline is welcome.
+    validations:
+      required: true

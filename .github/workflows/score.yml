@@ -1,0 +1,50 @@
+name: Score
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  score:
+    name: Quality, dimensions, maturity & health
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tooling dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Completeness score (min 80)
+        run: python tools/quality/runbook_validator.py --json quality/quality-score.json
+      - name: Quality dimensions
+        run: python tools/quality/runbook_quality_engine.py
+      - name: Maturity model
+        run: python tools/maturity_engine.py
+      - name: Repository health (min 80)
+        run: python tools/health/repository_health.py --min 80
+      - name: Search index + taxonomy + graph
+        run: |
+          python tools/search/build_index.py
+          python tools/recommendation_engine.py --graph
+      - name: Repository metrics
+        run: python metrics/repository_metrics.py
+      - name: Refresh badges
+        run: python tools/badges.py
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-reports
+          path: |
+            quality/*.json
+            metrics/*.json
+            catalog/*.json
+            .github/badges/*.json

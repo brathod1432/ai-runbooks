@@ -1,0 +1,36 @@
+{
+  "generated_by": "tools/health/repository_health.py",
+  "overall": 99.0,
+  "grade": "A",
+  "weights": {
+    "coverage": 0.2,
+    "documentation": 0.25,
+    "automation": 0.2,
+    "structure": 0.15,
+    "maintainability": 0.2
+  },
+  "dimensions": {
+    "coverage": 100.0,
+    "documentation": 100.0,
+    "automation": 95.0,
+    "structure": 100.0,
+    "maintainability": 100.0
+  },
+  "details": {
+    "coverage_missing": [],
+    "structure_missing": [],
+    "automation_missing": [],
+    "documentation": {
+      "mean_section_coverage": 100.0,
+      "mean_words": 1616,
+      "doc_pages": 33
+    },
+    "maintainability": {
+      "ownership_pct": 100.0,
+      "reviewers_pct": 100.0,
+      "versioned_pct": 100.0,
+      "review_date_pct": 100.0,
+      "status_pct": 100.0
+    }
+  }
+}

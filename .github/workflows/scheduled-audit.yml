@@ -1,0 +1,45 @@
+name: Scheduled Audit
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Weekly repository audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tooling dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Content audit
+        run: python tools/content_audit.py
+      - name: Repository health
+        run: python tools/health/repository_health.py --min 80
+      - name: Quality dimensions
+        run: python tools/quality/runbook_quality_engine.py
+      - name: Maturity model
+        run: python tools/maturity_engine.py
+      - name: Metrics
+        run: python metrics/repository_metrics.py
+      - name: Security score
+        run: python tools/security/security_score.py
+      - name: Upload audit bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-audit
+          path: |
+            quality/*.json
+            metrics/*.json
+            security/*.json
+            catalog/*.json

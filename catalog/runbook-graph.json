@@ -1,0 +1,935 @@
+{
+  "generated_by": "tools/recommendation_engine.py",
+  "node_count": 48,
+  "edge_count": 100,
+  "nodes": [
+    {
+      "id": "agent-evaluation-framework",
+      "title": "Agent Evaluation Framework",
+      "category": "ai-ml",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "llm-inference-optimization",
+      "title": "LLM Inference Optimization",
+      "category": "ai-ml",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "mcp-server-diagnostics",
+      "title": "MCP Server Diagnostics",
+      "category": "ai-ml",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "prompt-quality-review",
+      "title": "Prompt Quality Review",
+      "category": "ai-ml",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "rag-system-audit",
+      "title": "RAG System Audit",
+      "category": "ai-ml",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "graphql-performance-review",
+      "title": "GraphQL Performance Review",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "platform-engineering-review",
+      "title": "Platform Engineering Review",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "ci-cd-pipeline-debugging",
+      "title": "CI/CD Pipeline Debugging",
+      "category": "cicd",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "deployment-failure-analysis",
+      "title": "Deployment Failure Analysis",
+      "category": "cicd",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "aws-cost-optimization",
+      "title": "AWS Cost Optimization",
+      "category": "cloud-cost",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "azure-cost-optimization",
+      "title": "Azure Cost Optimization",
+      "category": "cloud-cost",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "gcp-cost-optimization",
+      "title": "GCP Cost Optimization",
+      "category": "cloud-cost",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "mongodb-health-review",
+      "title": "MongoDB Health Review",
+      "category": "databases",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "mysql-performance-analysis",
+      "title": "MySQL Performance Analysis",
+      "category": "databases",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "postgresql-optimization",
+      "title": "PostgreSQL Performance Optimization",
+      "category": "databases",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "redis-performance-diagnostics",
+      "title": "Redis Performance Diagnostics",
+      "category": "databases",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "vector-database-review",
+      "title": "Vector Database Review",
+      "category": "databases",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "aks-audit",
+      "title": "Azure AKS Audit",
+      "category": "kubernetes",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "eks-audit",
+      "title": "Amazon EKS Audit",
+      "category": "kubernetes",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "gke-audit",
+      "title": "Google GKE Audit",
+      "category": "kubernetes",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "kubernetes-cluster-audit",
+      "title": "Kubernetes Cluster Audit",
+      "category": "kubernetes",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "event-driven-migration",
+      "title": "Event-Driven Architecture Migration",
+      "category": "messaging",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "investigate-kafka-lag",
+      "title": "Investigate Kafka Consumer Lag",
+      "category": "messaging",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "java-version-upgrade",
+      "title": "Java Version Upgrade",
+      "category": "migrations",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "microservice-decomposition",
+      "title": "Microservice Decomposition",
+      "category": "migrations",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "monolith-to-microservices",
+      "title": "Monolith to Microservices Migration",
+      "category": "migrations",
+      "difficulty": "expert",
+      "maturity_level": 3
+    },
+    {
+      "id": "nodejs-major-version-upgrade",
+      "title": "Node.js Major Version Upgrade",
+      "category": "migrations",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "react-18-to-19-upgrade",
+      "title": "React 18 to 19 Upgrade",
+      "category": "migrations",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "rest-to-graphql-migration",
+      "title": "REST to GraphQL Migration",
+      "category": "migrations",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "logging-review",
+      "title": "Logging Review",
+      "category": "observability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "observability-review",
+      "title": "Observability Review",
+      "category": "observability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "tracing-review",
+      "title": "Distributed Tracing Review",
+      "category": "observability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "business-continuity-review",
+      "title": "Business Continuity Review",
+      "category": "reliability",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "disaster-recovery-assessment",
+      "title": "Disaster Recovery Assessment",
+      "category": "reliability",
+      "difficulty": "expert",
+      "maturity_level": 3
+    },
+    {
+      "id": "incident-postmortem",
+      "title": "Incident Postmortem",
+      "category": "reliability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "production-readiness-review",
+      "title": "Production Readiness Review",
+      "category": "reliability",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "release-readiness-review",
+      "title": "Release Readiness Review",
+      "category": "reliability",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "root-cause-analysis",
+      "title": "Root Cause Analysis",
+      "category": "reliability",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "service-reliability-review",
+      "title": "Service Reliability Review",
+      "category": "reliability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "sre-service-audit",
+      "title": "SRE Service Audit",
+      "category": "reliability",
+      "difficulty": "intermediate",
+      "maturity_level": 3
+    },
+    {
+      "id": "ai-system-security-review",
+      "title": "AI System Security Review",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "api-security-audit",
+      "title": "API Security Audit",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "container-security-audit",
+      "title": "Container Security Audit",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "docker-hardening",
+      "title": "Docker Hardening",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "jwt-security-review",
+      "title": "JWT Security Review",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "model-risk-assessment",
+      "title": "Model Risk Assessment",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "oauth-security-assessment",
+      "title": "OAuth Security Assessment",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    },
+    {
+      "id": "terraform-security-review",
+      "title": "Terraform Security Review",
+      "category": "security",
+      "difficulty": "advanced",
+      "maturity_level": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "root-cause-analysis",
+      "target": "incident-postmortem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "microservice-decomposition",
+      "target": "monolith-to-microservices",
+      "type": "prerequisite"
+    },
+    {
+      "source": "investigate-kafka-lag",
+      "target": "event-driven-migration",
+      "type": "prerequisite"
+    },
+    {
+      "source": "production-readiness-review",
+      "target": "release-readiness-review",
+      "type": "prerequisite"
+    },
+    {
+      "source": "kubernetes-cluster-audit",
+      "target": "eks-audit",
+      "type": "prerequisite"
+    },
+    {
+      "source": "kubernetes-cluster-audit",
+      "target": "aks-audit",
+      "type": "prerequisite"
+    },
+    {
+      "source": "kubernetes-cluster-audit",
+      "target": "gke-audit",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector-database-review",
+      "target": "rag-system-audit",
+      "type": "prerequisite"
+    },
+    {
+      "source": "prompt-quality-review",
+      "target": "agent-evaluation-framework",
+      "type": "prerequisite"
+    },
+    {
+      "source": "api-security-audit",
+      "target": "ai-system-security-review",
+      "type": "prerequisite"
+    },
+    {
+      "source": "agent-evaluation-framework",
+      "target": "prompt-quality-review",
+      "type": "related",
+      "weight": 0.4415
+    },
+    {
+      "source": "agent-evaluation-framework",
+      "target": "llm-inference-optimization",
+      "type": "related",
+      "weight": 0.4253
+    },
+    {
+      "source": "llm-inference-optimization",
+      "target": "agent-evaluation-framework",
+      "type": "related",
+      "weight": 0.4253
+    },
+    {
+      "source": "llm-inference-optimization",
+      "target": "rag-system-audit",
+      "type": "related",
+      "weight": 0.3956
+    },
+    {
+      "source": "mcp-server-diagnostics",
+      "target": "prompt-quality-review",
+      "type": "related",
+      "weight": 0.4078
+    },
+    {
+      "source": "mcp-server-diagnostics",
+      "target": "rag-system-audit",
+      "type": "related",
+      "weight": 0.4002
+    },
+    {
+      "source": "prompt-quality-review",
+      "target": "rag-system-audit",
+      "type": "related",
+      "weight": 0.4644
+    },
+    {
+      "source": "prompt-quality-review",
+      "target": "agent-evaluation-framework",
+      "type": "related",
+      "weight": 0.4415
+    },
+    {
+      "source": "rag-system-audit",
+      "target": "prompt-quality-review",
+      "type": "related",
+      "weight": 0.4644
+    },
+    {
+      "source": "rag-system-audit",
+      "target": "agent-evaluation-framework",
+      "type": "related",
+      "weight": 0.4035
+    },
+    {
+      "source": "graphql-performance-review",
+      "target": "platform-engineering-review",
+      "type": "related",
+      "weight": 0.3765
+    },
+    {
+      "source": "platform-engineering-review",
+      "target": "graphql-performance-review",
+      "type": "related",
+      "weight": 0.3765
+    },
+    {
+      "source": "ci-cd-pipeline-debugging",
+      "target": "deployment-failure-analysis",
+      "type": "related",
+      "weight": 0.3804
+    },
+    {
+      "source": "deployment-failure-analysis",
+      "target": "ci-cd-pipeline-debugging",
+      "type": "related",
+      "weight": 0.3804
+    },
+    {
+      "source": "aws-cost-optimization",
+      "target": "azure-cost-optimization",
+      "type": "related",
+      "weight": 0.743
+    },
+    {
+      "source": "aws-cost-optimization",
+      "target": "gcp-cost-optimization",
+      "type": "related",
+      "weight": 0.6527
+    },
+    {
+      "source": "azure-cost-optimization",
+      "target": "aws-cost-optimization",
+      "type": "related",
+      "weight": 0.743
+    },
+    {
+      "source": "azure-cost-optimization",
+      "target": "gcp-cost-optimization",
+      "type": "related",
+      "weight": 0.6567
+    },
+    {
+      "source": "gcp-cost-optimization",
+      "target": "azure-cost-optimization",
+      "type": "related",
+      "weight": 0.6567
+    },
+    {
+      "source": "gcp-cost-optimization",
+      "target": "aws-cost-optimization",
+      "type": "related",
+      "weight": 0.6527
+    },
+    {
+      "source": "mongodb-health-review",
+      "target": "postgresql-optimization",
+      "type": "related",
+      "weight": 0.4979
+    },
+    {
+      "source": "mongodb-health-review",
+      "target": "mysql-performance-analysis",
+      "type": "related",
+      "weight": 0.4943
+    },
+    {
+      "source": "mysql-performance-analysis",
+      "target": "postgresql-optimization",
+      "type": "related",
+      "weight": 0.6589
+    },
+    {
+      "source": "mysql-performance-analysis",
+      "target": "mongodb-health-review",
+      "type": "related",
+      "weight": 0.4943
+    },
+    {
+      "source": "postgresql-optimization",
+      "target": "mysql-performance-analysis",
+      "type": "related",
+      "weight": 0.6589
+    },
+    {
+      "source": "postgresql-optimization",
+      "target": "mongodb-health-review",
+      "type": "related",
+      "weight": 0.4979
+    },
+    {
+      "source": "redis-performance-diagnostics",
+      "target": "mongodb-health-review",
+      "type": "related",
+      "weight": 0.4107
+    },
+    {
+      "source": "redis-performance-diagnostics",
+      "target": "mysql-performance-analysis",
+      "type": "related",
+      "weight": 0.4021
+    },
+    {
+      "source": "vector-database-review",
+      "target": "mongodb-health-review",
+      "type": "related",
+      "weight": 0.3939
+    },
+    {
+      "source": "vector-database-review",
+      "target": "mysql-performance-analysis",
+      "type": "related",
+      "weight": 0.3862
+    },
+    {
+      "source": "aks-audit",
+      "target": "gke-audit",
+      "type": "related",
+      "weight": 0.4785
+    },
+    {
+      "source": "aks-audit",
+      "target": "eks-audit",
+      "type": "related",
+      "weight": 0.4779
+    },
+    {
+      "source": "eks-audit",
+      "target": "kubernetes-cluster-audit",
+      "type": "related",
+      "weight": 0.5086
+    },
+    {
+      "source": "eks-audit",
+      "target": "aks-audit",
+      "type": "related",
+      "weight": 0.4779
+    },
+    {
+      "source": "gke-audit",
+      "target": "aks-audit",
+      "type": "related",
+      "weight": 0.4785
+    },
+    {
+      "source": "gke-audit",
+      "target": "eks-audit",
+      "type": "related",
+      "weight": 0.4662
+    },
+    {
+      "source": "kubernetes-cluster-audit",
+      "target": "eks-audit",
+      "type": "related",
+      "weight": 0.5086
+    },
+    {
+      "source": "kubernetes-cluster-audit",
+      "target": "gke-audit",
+      "type": "related",
+      "weight": 0.4578
+    },
+    {
+      "source": "event-driven-migration",
+      "target": "investigate-kafka-lag",
+      "type": "related",
+      "weight": 0.4049
+    },
+    {
+      "source": "investigate-kafka-lag",
+      "target": "event-driven-migration",
+      "type": "related",
+      "weight": 0.4049
+    },
+    {
+      "source": "java-version-upgrade",
+      "target": "nodejs-major-version-upgrade",
+      "type": "related",
+      "weight": 0.4616
+    },
+    {
+      "source": "java-version-upgrade",
+      "target": "react-18-to-19-upgrade",
+      "type": "related",
+      "weight": 0.4045
+    },
+    {
+      "source": "microservice-decomposition",
+      "target": "monolith-to-microservices",
+      "type": "related",
+      "weight": 0.4976
+    },
+    {
+      "source": "microservice-decomposition",
+      "target": "rest-to-graphql-migration",
+      "type": "related",
+      "weight": 0.3699
+    },
+    {
+      "source": "monolith-to-microservices",
+      "target": "microservice-decomposition",
+      "type": "related",
+      "weight": 0.4976
+    },
+    {
+      "source": "monolith-to-microservices",
+      "target": "rest-to-graphql-migration",
+      "type": "related",
+      "weight": 0.3625
+    },
+    {
+      "source": "nodejs-major-version-upgrade",
+      "target": "java-version-upgrade",
+      "type": "related",
+      "weight": 0.4616
+    },
+    {
+      "source": "nodejs-major-version-upgrade",
+      "target": "react-18-to-19-upgrade",
+      "type": "related",
+      "weight": 0.3901
+    },
+    {
+      "source": "react-18-to-19-upgrade",
+      "target": "java-version-upgrade",
+      "type": "related",
+      "weight": 0.4045
+    },
+    {
+      "source": "react-18-to-19-upgrade",
+      "target": "nodejs-major-version-upgrade",
+      "type": "related",
+      "weight": 0.3901
+    },
+    {
+      "source": "rest-to-graphql-migration",
+      "target": "microservice-decomposition",
+      "type": "related",
+      "weight": 0.3699
+    },
+    {
+      "source": "rest-to-graphql-migration",
+      "target": "react-18-to-19-upgrade",
+      "type": "related",
+      "weight": 0.3684
+    },
+    {
+      "source": "logging-review",
+      "target": "tracing-review",
+      "type": "related",
+      "weight": 0.434
+    },
+    {
+      "source": "logging-review",
+      "target": "observability-review",
+      "type": "related",
+      "weight": 0.4285
+    },
+    {
+      "source": "observability-review",
+      "target": "tracing-review",
+      "type": "related",
+      "weight": 0.4605
+    },
+    {
+      "source": "observability-review",
+      "target": "logging-review",
+      "type": "related",
+      "weight": 0.4285
+    },
+    {
+      "source": "tracing-review",
+      "target": "observability-review",
+      "type": "related",
+      "weight": 0.4605
+    },
+    {
+      "source": "tracing-review",
+      "target": "logging-review",
+      "type": "related",
+      "weight": 0.434
+    },
+    {
+      "source": "business-continuity-review",
+      "target": "disaster-recovery-assessment",
+      "type": "related",
+      "weight": 0.4286
+    },
+    {
+      "source": "business-continuity-review",
+      "target": "service-reliability-review",
+      "type": "related",
+      "weight": 0.4156
+    },
+    {
+      "source": "disaster-recovery-assessment",
+      "target": "business-continuity-review",
+      "type": "related",
+      "weight": 0.4286
+    },
+    {
+      "source": "disaster-recovery-assessment",
+      "target": "service-reliability-review",
+      "type": "related",
+      "weight": 0.4096
+    },
+    {
+      "source": "incident-postmortem",
+      "target": "root-cause-analysis",
+      "type": "related",
+      "weight": 0.515
+    },
+    {
+      "source": "incident-postmortem",
+      "target": "production-readiness-review",
+      "type": "related",
+      "weight": 0.4456
+    },
+    {
+      "source": "production-readiness-review",
+      "target": "sre-service-audit",
+      "type": "related",
+      "weight": 0.4652
+    },
+    {
+      "source": "production-readiness-review",
+      "target": "service-reliability-review",
+      "type": "related",
+      "weight": 0.4608
+    },
+    {
+      "source": "release-readiness-review",
+      "target": "service-reliability-review",
+      "type": "related",
+      "weight": 0.457
+    },
+    {
+      "source": "release-readiness-review",
+      "target": "production-readiness-review",
+      "type": "related",
+      "weight": 0.4545
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "incident-postmortem",
+      "type": "related",
+      "weight": 0.515
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "sre-service-audit",
+      "type": "related",
+      "weight": 0.5129
+    },
+    {
+      "source": "service-reliability-review",
+      "target": "production-readiness-review",
+      "type": "related",
+      "weight": 0.4608
+    },
+    {
+      "source": "service-reliability-review",
+      "target": "release-readiness-review",
+      "type": "related",
+      "weight": 0.457
+    },
+    {
+      "source": "sre-service-audit",
+      "target": "root-cause-analysis",
+      "type": "related",
+      "weight": 0.5129
+    },
+    {
+      "source": "sre-service-audit",
+      "target": "production-readiness-review",
+      "type": "related",
+      "weight": 0.4652
+    },
+    {
+      "source": "ai-system-security-review",
+      "target": "api-security-audit",
+      "type": "related",
+      "weight": 0.4025
+    },
+    {
+      "source": "ai-system-security-review",
+      "target": "oauth-security-assessment",
+      "type": "related",
+      "weight": 0.3982
+    },
+    {
+      "source": "api-security-audit",
+      "target": "oauth-security-assessment",
+      "type": "related",
+      "weight": 0.437
+    },
+    {
+      "source": "api-security-audit",
+      "target": "ai-system-security-review",
+      "type": "related",
+      "weight": 0.4025
+    },
+    {
+      "source": "container-security-audit",
+      "target": "docker-hardening",
+      "type": "related",
+      "weight": 0.4159
+    },
+    {
+      "source": "container-security-audit",
+      "target": "terraform-security-review",
+      "type": "related",
+      "weight": 0.3965
+    },
+    {
+      "source": "docker-hardening",
+      "target": "container-security-audit",
+      "type": "related",
+      "weight": 0.4159
+    },
+    {
+      "source": "docker-hardening",
+      "target": "oauth-security-assessment",
+      "type": "related",
+      "weight": 0.382
+    },
+    {
+      "source": "jwt-security-review",
+      "target": "oauth-security-assessment",
+      "type": "related",
+      "weight": 0.4036
+    },
+    {
+      "source": "jwt-security-review",
+      "target": "api-security-audit",
+      "type": "related",
+      "weight": 0.3917
+    },
+    {
+      "source": "model-risk-assessment",
+      "target": "jwt-security-review",
+      "type": "related",
+      "weight": 0.3848
+    },
+    {
+      "source": "model-risk-assessment",
+      "target": "api-security-audit",
+      "type": "related",
+      "weight": 0.3831
+    },
+    {
+      "source": "oauth-security-assessment",
+      "target": "api-security-audit",
+      "type": "related",
+      "weight": 0.437
+    },
+    {
+      "source": "oauth-security-assessment",
+      "target": "terraform-security-review",
+      "type": "related",
+      "weight": 0.4045
+    },
+    {
+      "source": "terraform-security-review",
+      "target": "oauth-security-assessment",
+      "type": "related",
+      "weight": 0.4045
+    },
+    {
+      "source": "terraform-security-review",
+      "target": "container-security-audit",
+      "type": "related",
+      "weight": 0.3965
+    }
+  ]
+}

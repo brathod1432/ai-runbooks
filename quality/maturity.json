@@ -1,0 +1,685 @@
+{
+  "generated_by": "tools/maturity_engine.py",
+  "distribution": {
+    "L1-Draft": 0,
+    "L2-Validated": 0,
+    "L3-Production": 0,
+    "L4-Enterprise": 4,
+    "L5-Reference Standard": 44
+  },
+  "mismatches": 48,
+  "runbooks": [
+    {
+      "id": "agent-evaluation-framework",
+      "path": "runbooks/ai-ml/agent-evaluation-framework.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "llm-inference-optimization",
+      "path": "runbooks/ai-ml/llm-inference-optimization.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "mcp-server-diagnostics",
+      "path": "runbooks/ai-ml/mcp-server-diagnostics.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "prompt-quality-review",
+      "path": "runbooks/ai-ml/prompt-quality-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "rag-system-audit",
+      "path": "runbooks/ai-ml/rag-system-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "graphql-performance-review",
+      "path": "runbooks/architecture/graphql-performance-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "platform-engineering-review",
+      "path": "runbooks/architecture/platform-engineering-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "ci-cd-pipeline-debugging",
+      "path": "runbooks/cicd/ci-cd-pipeline-debugging.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "deployment-failure-analysis",
+      "path": "runbooks/cicd/deployment-failure-analysis.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "aws-cost-optimization",
+      "path": "runbooks/cloud-cost/aws-cost-optimization.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "azure-cost-optimization",
+      "path": "runbooks/cloud-cost/azure-cost-optimization.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "gcp-cost-optimization",
+      "path": "runbooks/cloud-cost/gcp-cost-optimization.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "mongodb-health-review",
+      "path": "runbooks/databases/mongodb-health-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "mysql-performance-analysis",
+      "path": "runbooks/databases/mysql-performance-analysis.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "postgresql-optimization",
+      "path": "runbooks/databases/postgresql-optimization.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "redis-performance-diagnostics",
+      "path": "runbooks/databases/redis-performance-diagnostics.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "vector-database-review",
+      "path": "runbooks/databases/vector-database-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "aks-audit",
+      "path": "runbooks/kubernetes/aks-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "eks-audit",
+      "path": "runbooks/kubernetes/eks-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "gke-audit",
+      "path": "runbooks/kubernetes/gke-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "kubernetes-cluster-audit",
+      "path": "runbooks/kubernetes/kubernetes-cluster-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "event-driven-migration",
+      "path": "runbooks/messaging/event-driven-migration.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "investigate-kafka-lag",
+      "path": "runbooks/messaging/investigate-kafka-lag.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "java-version-upgrade",
+      "path": "runbooks/migrations/java-version-upgrade.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "microservice-decomposition",
+      "path": "runbooks/migrations/microservice-decomposition.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "monolith-to-microservices",
+      "path": "runbooks/migrations/monolith-to-microservices.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "nodejs-major-version-upgrade",
+      "path": "runbooks/migrations/nodejs-major-version-upgrade.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "react-18-to-19-upgrade",
+      "path": "runbooks/migrations/react-18-to-19-upgrade.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "rest-to-graphql-migration",
+      "path": "runbooks/migrations/rest-to-graphql-migration.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "logging-review",
+      "path": "runbooks/observability/logging-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "observability-review",
+      "path": "runbooks/observability/observability-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "tracing-review",
+      "path": "runbooks/observability/tracing-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "business-continuity-review",
+      "path": "runbooks/reliability/business-continuity-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "disaster-recovery-assessment",
+      "path": "runbooks/reliability/disaster-recovery-assessment.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "incident-postmortem",
+      "path": "runbooks/reliability/incident-postmortem.md",
+      "declared_level": 3,
+      "computed_level": 4,
+      "computed_name": "Enterprise",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "not yet reference-standard (need richer tables/checklists, >=8 agents, deeper content)"
+      ]
+    },
+    {
+      "id": "production-readiness-review",
+      "path": "runbooks/reliability/production-readiness-review.md",
+      "declared_level": 3,
+      "computed_level": 4,
+      "computed_name": "Enterprise",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "not yet reference-standard (need richer tables/checklists, >=8 agents, deeper content)"
+      ]
+    },
+    {
+      "id": "release-readiness-review",
+      "path": "runbooks/reliability/release-readiness-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "root-cause-analysis",
+      "path": "runbooks/reliability/root-cause-analysis.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "service-reliability-review",
+      "path": "runbooks/reliability/service-reliability-review.md",
+      "declared_level": 3,
+      "computed_level": 4,
+      "computed_name": "Enterprise",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "not yet reference-standard (need richer tables/checklists, >=8 agents, deeper content)"
+      ]
+    },
+    {
+      "id": "sre-service-audit",
+      "path": "runbooks/reliability/sre-service-audit.md",
+      "declared_level": 3,
+      "computed_level": 4,
+      "computed_name": "Enterprise",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "not yet reference-standard (need richer tables/checklists, >=8 agents, deeper content)"
+      ]
+    },
+    {
+      "id": "ai-system-security-review",
+      "path": "runbooks/security/ai-system-security-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "api-security-audit",
+      "path": "runbooks/security/api-security-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "container-security-audit",
+      "path": "runbooks/security/container-security-audit.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "docker-hardening",
+      "path": "runbooks/security/docker-hardening.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "jwt-security-review",
+      "path": "runbooks/security/jwt-security-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "model-risk-assessment",
+      "path": "runbooks/security/model-risk-assessment.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "oauth-security-assessment",
+      "path": "runbooks/security/oauth-security-assessment.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    },
+    {
+      "id": "terraform-security-review",
+      "path": "runbooks/security/terraform-security-review.md",
+      "declared_level": 3,
+      "computed_level": 5,
+      "computed_name": "Reference Standard",
+      "match": false,
+      "reasons": [
+        "L2: structure + diagrams + example",
+        "L3: validation + rollback + escalation + reviewers",
+        "L4: enterprise governance metadata present",
+        "L5: rich, broad agent support, deep content"
+      ]
+    }
+  ]
+}

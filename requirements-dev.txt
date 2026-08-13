@@ -1,0 +1,9 @@
+# Development / tooling dependencies for awesome-ai-runbooks.
+# The core library (tools/runbook_lib.py) runs on the Python standard library
+# alone; these extras improve robustness (YAML) and enable schema validation
+# and the test suite. Versions are lower-bounded to vetted, stable releases.
+
+PyYAML>=6.0.1
+jsonschema>=4.21.0
+pytest>=8.0.0
+pytest-cov>=4.1.0

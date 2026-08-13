@@ -1,0 +1,102 @@
+# mkdocs.yml — Material for MkDocs configuration for the awesome-ai-runbooks portal.
+#
+# Build locally:
+#   pip install mkdocs-material
+#   mkdocs serve
+#
+# Versioned docs are published with `mike` (see the `extra.version` block below).
+# `mike` lets you keep multiple documentation versions (e.g. 1.0, 1.1, latest)
+# side by side and exposes a version selector in the Material header.
+
+site_name: awesome-ai-runbooks
+site_description: >-
+  The definitive open-source library of operational runbooks for autonomous
+  AI agents — vendor-neutral, evidence-first, and machine-checkable.
+site_author: awesome-ai-runbooks contributors
+repo_url: https://github.com/awesome-ai-runbooks/awesome-ai-runbooks
+repo_name: awesome-ai-runbooks/awesome-ai-runbooks
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    # Light mode (default scheme) with a toggle to dark mode.
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode (slate scheme) with a toggle back to light mode.
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        # Render ```mermaid fenced blocks as diagrams.
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  # `mike` provides versioned documentation and a version selector in the header.
+  # Publish versions with, for example: `mike deploy --push --update-aliases 1.0 latest`.
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Architecture: architecture.md
+  - Standards: standards.md
+  - Agent Frameworks: agent-frameworks.md
+  - Runbook Library: runbook-library.md
+  - Quality Framework: quality-framework.md
+  - Governance: governance.md
+  - Enterprise: enterprise.md
+  - Integrations:
+      - Overview: integrations/index.md
+      - GitHub Copilot: integrations/github-copilot.md
+      - Cursor: integrations/cursor.md
+      - Claude Code: integrations/claude-code.md
+      - Devin: integrations/devin.md
+      - OpenHands: integrations/openhands.md
+      - AutoGen: integrations/autogen.md
+      - CrewAI: integrations/crewai.md
+      - LangGraph: integrations/langgraph.md
+      - OpenAI Agents: integrations/openai-agents.md
+      - MCP Clients: integrations/mcp-clients.md
+  - Roadmap: future-roadmap.md
+  - Contributing: contributing.md

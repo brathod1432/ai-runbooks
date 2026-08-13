@@ -1,0 +1,22 @@
+# CODEOWNERS for awesome-ai-runbooks
+# These teams are automatically requested for review when matching paths change.
+# Later, more specific rules override earlier ones.
+
+# Default owners for everything in the repo.
+*                               @awesome-ai-runbooks/maintainers
+
+# Security-sensitive areas require security reviewers.
+/runbooks/security/             @awesome-ai-runbooks/security
+/security/                      @awesome-ai-runbooks/security
+/SECURITY.md                    @awesome-ai-runbooks/security
+
+# Tooling, scripts, and CI configuration.
+/tools/                         @awesome-ai-runbooks/maintainers
+/scripts/                       @awesome-ai-runbooks/maintainers
+/.github/                       @awesome-ai-runbooks/maintainers
+
+# Governance and process.
+/governance/                    @awesome-ai-runbooks/governance
+
+# Documentation.
+/docs/                          @awesome-ai-runbooks/docs

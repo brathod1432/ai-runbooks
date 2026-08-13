@@ -1,0 +1,34 @@
+name: Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Structure, schema, metadata & tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tooling dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Repository structure
+        run: python scripts/validate_structure.py
+      - name: Runbook + schema + metadata validation
+        run: python tools/quality/runbook_validator.py
+      - name: Metadata enrichment is complete (no drift)
+        run: python tools/metadata_enrich.py --check
+      - name: Documentation coverage
+        run: python scripts/doc_coverage.py --min 95
+      - name: Content audit
+        run: python tools/content_audit.py
+      - name: Test suite
+        run: python -m pytest -q

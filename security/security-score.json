@@ -1,0 +1,30 @@
+{
+  "generated_by": "tools/security/security_score.py",
+  "security_maturity_score": 91,
+  "security_maturity_level": 4,
+  "security_maturity_name": "Measured",
+  "components": {
+    "no_high_secrets": 20,
+    "no_high_deps": 15,
+    "docs": 20,
+    "ci_enforced": 15,
+    "security_runbooks": 8,
+    "high_risk_review": 10,
+    "compliance_metadata": 3
+  },
+  "signals": {
+    "high_confidence_secrets": 0,
+    "high_severity_dependencies": 0,
+    "docs_present": {
+      "SECURITY.md": true,
+      "threat_model": true,
+      "review_process": true,
+      "guidelines": true
+    },
+    "ci_security_workflow": true,
+    "security_runbooks": 8,
+    "high_risk_runbooks": 27,
+    "high_risk_reviewed": 27,
+    "runbooks_with_compliance_tags": 13
+  }
+}

@@ -1,0 +1,53 @@
+name: "🐞 Bug report"
+description: Report an error in a runbook, template, or tooling.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a defect in repository content or tooling — for example an
+        incorrect command, a broken diagram, a validator false positive, or a
+        dead link. **Do not** report security or safety issues here; use the
+        **Security issue** form or a private advisory instead.
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: File path (and heading/line) or tool where the problem occurs.
+      placeholder: "runbooks/databases/postgres-replica-lag.md — 'Execution Instructions'"
+    validations:
+      required: true
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong?
+      description: Describe the defect precisely. Paste the offending text or command if helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / correct content
+      description: What should it say or do instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How serious is this defect?
+      options:
+        - safety-critical (could cause an agent to take an unsafe action)
+        - incorrect (wrong result but not unsafe)
+        - cosmetic (typo, formatting, style)
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Agent platform, OS, tool versions, commit/tag — anything relevant to reproduce.
+      placeholder: "Devin; commit abc1234; runbook_validator.py on Python 3.11"
+    validations:
+      required: false

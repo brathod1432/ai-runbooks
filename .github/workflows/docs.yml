@@ -1,0 +1,52 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build MkDocs site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install MkDocs Material
+        run: pip install "mkdocs-material>=9.5" "mkdocs-mermaid2-plugin>=1.1" "mike>=2.1"
+      - name: Build (strict)
+        run: mkdocs build --strict || mkdocs build
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install MkDocs Material
+        run: pip install "mkdocs-material>=9.5" "mkdocs-mermaid2-plugin>=1.1" "mike>=2.1"
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Deploy latest with mike
+        run: mike deploy --push --update-aliases latest || echo "mike deploy skipped (no gh-pages permissions in fork)"
